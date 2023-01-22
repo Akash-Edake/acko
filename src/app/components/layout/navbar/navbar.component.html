@@ -1,0 +1,35 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-6">
+    
+            <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+                <h1 style="font-weight:normal">Acko</h1>
+                <ul>
+                    <h3 ><a routerLink="/"   routerLinkActive="active-link">Home</a></h3>
+                    <li><a routerLink="/car" routerLinkActive="active-link">car</a></li>
+                    <li><a routerLink="/bike" routerLinkActive="active-link">Bike</a></li>
+                    <li><a routerLink="/health" routerLinkActive="">health</a></li>
+                    <li><a routerLink="/electronics" >electronics</a></li>
+                </ul>
+            
+                <ul>Resources
+                <li><a routerLink="/guides" routerLinkActive="">Guides </a></li>
+                <li><a routerLink="/article" routerLinkActive="">articles </a></li>
+                </ul>
+            </p-sidebar>
+            
+            
+            <p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-align-left"></p-button>
+            
+            </div>
+            
+            <div class="col-6 text-end " >
+                <button pButton pRipple type="button" label="Success" class="p-button-rounded p-button-success"></button>
+                
+            <button pButton pRipple type="button " label="Secondary" class="p-button-outlined p-button-secondary mx-3"></button>
+            
+            <button pButton pRipple type="button" label="Plain" class="p-button-text p-button-plain"></button>
+            </div>
+            
+    </div>
+</div>
